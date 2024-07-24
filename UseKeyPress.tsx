@@ -16,7 +16,7 @@ export default function UseKeyPress(): UseKeyPressReturn {
     // @{keysDown} - Keys that are currently being held down.
     const [keysDown, setKeysDown] = useState<number[]>([]);
     // @{readableKeys} - Human readable key code history.
-    const [readableKeys, setReadableKeys] = useState<string[]>("");
+    const [readableKeys, setReadableKeys] = useState<string[]>([]);
 
     function handleKeyDown(e : any) {
         setKeysDown((old) => {
